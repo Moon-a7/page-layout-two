@@ -1,0 +1,16 @@
+.collapse dt {
+  border-top: 1px solid #333;
+  padding: 10px;
+}
+.collapse dd {
+  margin: 0;
+  padding: 0 10px;
+
+  overflow: hidden;
+  height: 0;
+  transition: all 1s ease;
+}
+
+.collapse dd.expanded {
+  height: 30px;
+}

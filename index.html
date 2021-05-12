@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Collapse component</title>
+    <meta name="description" content="Collapse component" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <dl class="collapse">
+      <dt>Live</dt>
+      <dd>"To be, or not to be (...)"</dd>
+      <dt>Love</dt>
+      <dd>One Love M*****</dd>
+      <dd>Love in the air</dd>
+      <dt>Family</dt>
+      <dd>Daughter, parents, sister, siostrzenica</dd>
+      <dt>Earth</dt>
+      <dd>Mother nature</dd>
+      <dd>Beautiful</dd>
+      <dd>Naturelovers</dd>
+      
+    </dl>
+
+    <script>
+      const terms = document.querySelectorAll("dt");
+      terms.forEach((term) => {
+        term.addEventListener("click", handleClick);
+      });
+
+      function handleClick(event) {
+        event.target.nextElementSibling.classList.toggle("expanded");
+      }
+
+    </script>
+  </body>
+</html>
